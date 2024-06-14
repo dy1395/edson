@@ -870,30 +870,12 @@ server = function(input, output, session) {
                               ss$goal[k] > 0,
                               paste0(
                                 ss$i[k], ': ',
-                                switch(ss$goal[k], '✕', '✓')
+                                switch(ss$goal[k], '✘', '✓')
                               ),
                               ss$i[k]
                             )
                           )
                         )
-                        # actionBttn(
-                        #   inputId = paste0('shoot', i, '_', j),
-                        #   label = ss$i[k],
-                        #   style = switch(
-                        #     ss$goal[k] + 1, 
-                        #     'bordered',
-                        #     'bordered', 
-                        #     'simple'
-                        #   ),
-                        #   size = 'xs',
-                        #   color = switch(
-                        #     ss$goal[k] + 1,
-                        #     c('primary', 'danger')[i],
-                        #     'default',
-                        #     c('primary', 'danger')[i]
-                        #   ),
-                        #   block = TRUE
-                        # )
                       )
                     }
                   )
